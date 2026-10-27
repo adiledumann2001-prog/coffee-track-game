@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Coffee Track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="scoreBoard">Skor: <span id="score">0</span></div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOverScreen" style="display: none;">
+            <h2>Oyun Bitti!</h2>
+            <p>Skorun: <span id="finalScore">0</span></p>
+            <button onclick="resetGame()">Tekrar Oyna</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
